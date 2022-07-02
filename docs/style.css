@@ -1,3 +1,4 @@
+/*BEGIN - FULL PAGE*/
 *{
     padding:0;
     margin:0;
@@ -8,7 +9,10 @@ body{
     background:#eee;
     font-family: Georgia, sans-serif;
 }
+/*END - FULL PAGE*/
 
+
+/*BEGIN - LANDING PAGE*/
 .landing-page{
     width:100%;
     height:100vh;
@@ -28,16 +32,17 @@ body{
 }
 
 .content h1{
-    font-size:80px;
+    font-size: 70px;
     color:#ffffff;
     text-align: center;
     margin-top: 25px;
+    margin-bottom: 10px;
     text-shadow: 2px 2px black;
 }
 
 .content p{
-    font-size:30px;
-    color:#ddd;
+    font-size:1.500rem;
+    color:#ffffff;
 }
 
 .content .btn{
@@ -51,6 +56,7 @@ body{
     cursor: pointer;
     background:#222;
 }
+/*END - LANDING PAGE*/
 
 /*BEGIN - ID'S*/
 #main-logo-diyanet {
