@@ -63,6 +63,73 @@ body {
 }
 /*END - LANDING PAGE*/
 
+#about-us-page .about-us-page {
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#about-us-page .about-us-top-part {
+    max-width: 500px;
+    margin: 0 auto;
+}
+#about-us-page .service-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#about-us-page .service-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(./img/img-1.png);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#about-us-page .service-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .9;
+    z-index: -1;
+}
+#about-us-page .service-bottom .icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#about-us-page .service-item h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#about-us-page .service-item p {
+    color: white;
+    text-align: left;
+}
+
+.section-title {
+    font-family: Georgia, sans-serif;
+    font-size: 60px;
+}
+
+
 /*BEGIN - ID'S*/
 #main-logo-diyanet {
     width: 150px;
