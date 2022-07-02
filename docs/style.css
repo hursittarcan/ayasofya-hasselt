@@ -64,13 +64,39 @@ body {
 }
 /*END - LANDING PAGE*/
 
+.about-us-total {
+    width: 100%;
+    overflow:auto;
+}
+
+.about-left {
+    float:left;
+    text-align: center;
+    width: 50%;
+    height: 100vh;
+    background: #2f2929;
+    padding: 40px;
+}
+
+.about-right {
+    float:right;
+    width: 50%;
+    background:#2f2929;
+}
+
 #about-us-page .about-us-page {
     flex-direction: column;
     text-align: center;
-    background: yellow;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: #2f2929;
     height: 100vh;
-    margin: 0 auto;
+    float: left;
     padding: 100px 0;
+}
+
+#image-about {
+    margin-top: 45px;
 }
 
 #about-us-page .about-us-top-part {
