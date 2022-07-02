@@ -2,6 +2,7 @@
 * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
@@ -66,6 +67,7 @@ body {
 #about-us-page .about-us-page {
     flex-direction: column;
     text-align: center;
+    background: yellow;
     height: 100vh;
     margin: 0 auto;
     padding: 100px 0;
