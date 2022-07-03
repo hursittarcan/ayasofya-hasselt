@@ -267,3 +267,20 @@ body {
 .section-title span {
     color: darkred;
 }
+
+.landing-page-button {
+    border: solid #2f2929 2px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #2f2929;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: 15px;
+}
+
+.landing-page-button:hover {
+    background: #2f2929;
+    color: wheat;
+}
