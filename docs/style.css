@@ -178,6 +178,7 @@ body {
 
 #projects .projects {
     flex-direction: column;
+    border-radius: 30px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
@@ -199,7 +200,7 @@ body {
     width: 80%;
     margin: 20px auto;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 #projects .project-info {
     padding: 30px;
@@ -281,6 +282,129 @@ body {
 }
 
 .landing-page-button:hover {
+    background: #2f2929;
+    color: wheat;
+}
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+}
+
+.floatleft {
+    padding-top: 40vh;
+    padding-left: 2vh;
+    align-content: center;
+    text-align: center;
+}
+
+.floatleft, .floatright {
+    float:left;
+    width: 50%;
+    background-color: #ff0000;
+    height: inherit;
+}
+
+.floatright {
+    background-color: #00ff00;
+    width: 50%;
+}
+
+#adress-div {
+    background: yellow;
+    border-radius: 30px;
+    text-align: center;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+#contact-page {
+    background: yellow;
+}
+
+#about-us-page2 .about-us-page {
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #2f2929;
+    background: yellow;
+    height: 100vh;
+    float: left;
+    padding: 100px 0;
+}
+
+#about-us-page2 .about-us-top-part {
+    max-width: 500px;
+    font-weight: 500;
+    margin: 0 auto;
+}
+#about-us-page2 .service-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#about-us-page2 .service-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#about-us-page2 .service-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .9;
+    z-index: -1;
+}
+#about-us-page2 .service-bottom .icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#about-us-page2 .service-item h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#about-us-page2 .service-item p {
+    color: white;
+    text-align: left;
+}
+
+#contact-div {
+    height: auto;
+}
+
+.contact-page-button {
+    border: solid #2f2929 2px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 20%;
+    color: #2f2929;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 8px 12px;
+    margin-top: 15px;
+}
+
+.contact-page-button:hover {
     background: #2f2929;
     color: wheat;
 }
