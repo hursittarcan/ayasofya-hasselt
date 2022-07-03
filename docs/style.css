@@ -76,7 +76,7 @@ body {
     width: 50%;
     height: 100vh;
     background: #ded3d3;
-    padding: 40px 40px 40px 100px;
+    padding: 30px 20px 50px 100px;
 }
 
 .about-right {
@@ -410,7 +410,7 @@ body {
 }
 
 #maps {
-    border-radius: 30px;
+    border-radius: 15px;
     border: solid #2f2929 7px;
 }
 
