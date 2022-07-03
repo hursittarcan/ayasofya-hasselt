@@ -418,15 +418,13 @@ body {
 }
 
 #facebook-button:hover {
-    background: blue;
-    color: white;
-    border-color: black;
+    background: #2f2929;
+    color: wheat;
 }
 
 #mail-button:hover {
-    background: red;
-    color: white;
-    border-color: black;
+    background: #2f2929;
+    color: wheat;
 }
 
 .footer{
