@@ -66,6 +66,7 @@ body {
 
 .about-us-total {
     width: 100%;
+    height: 100vh;
     overflow:auto;
 }
 
@@ -311,7 +312,6 @@ body {
 }
 
 #adress-div {
-    background: yellow;
     border-radius: 30px;
     text-align: center;
     height: auto;
@@ -321,7 +321,7 @@ body {
 }
 
 #contact-page {
-    background: yellow;
+    height: 100vh;
 }
 
 #about-us-page2 .about-us-page {
@@ -329,8 +329,6 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;
     color: #2f2929;
-    background: yellow;
-    height: 100vh;
     float: left;
     padding: 100px 0;
 }
@@ -389,13 +387,14 @@ body {
 
 #contact-div {
     height: auto;
+    margin-top: -32px;
 }
 
 .contact-page-button {
-    border: solid #2f2929 2px;
+    border: solid #2f2929 3px;
     background: transparent;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     width: 30%;
     color: #2f2929;
     font-size: 12px;
@@ -408,6 +407,11 @@ body {
     background: #2f2929;
     color: wheat;
     cursor: pointer;
+}
+
+#maps {
+    border-radius: 30px;
+    border: solid #2f2929 7px;
 }
 
 #facebook-button:hover {
