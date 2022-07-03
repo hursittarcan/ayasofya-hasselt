@@ -388,6 +388,9 @@ body {
 #contact-div {
     height: auto;
     margin-top: -32px;
+    font-family: Arial, sans-serif;
+    color: #2f2929;
+    font-weight: 500;
 }
 
 .contact-page-button {
