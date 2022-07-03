@@ -75,12 +75,13 @@ body {
     width: 50%;
     height: 100vh;
     background: #2f2929;
-    padding: 40px;
+    padding: 40px 40px 40px 100px;
 }
 
 .about-right {
     float:right;
     width: 50%;
+    padding-right: 100px;
     background:#2f2929;
 }
 
@@ -96,7 +97,7 @@ body {
 }
 
 #image-about {
-    margin-top: 45px;
+    margin-top: 55px;
 }
 
 #about-us-page .about-us-top-part {
@@ -252,7 +253,7 @@ body {
 .section-title {
     font-size: 4rem;
     font-weight: 300;
-    color: black;
+    color: wheat;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: .2rem;
