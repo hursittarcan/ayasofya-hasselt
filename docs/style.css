@@ -428,3 +428,29 @@ body {
     color: white;
     border-color: black;
 }
+
+.footer{
+    text-align: center;
+    background: #000;
+}
+
+.footer-text{
+    padding: 1.1rem 0;
+}
+
+.text{
+    margin: 0.6rem 0;
+    color: wheat;
+    font-weight: 200;
+    word-spacing: 2px;
+}
+
+#foot {
+    font-family: Arial, serif;
+    font-weight: bold;
+}
+
+.container2{
+    width: 90vw;
+    margin: 0 auto;
+}
