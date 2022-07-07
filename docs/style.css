@@ -10,6 +10,12 @@ body {
     background: #eee;
     font-family: Georgia, sans-serif;
 }
+
+.section-title {
+    font-family: Georgia, sans-serif;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
 /*END - FULL PAGE*/
 
 
@@ -64,6 +70,7 @@ body {
 }
 /*END - LANDING PAGE*/
 
+/*BEGIN - ABOUT US PAGE*/
 .about-us-total {
     width: 100%;
     height: 100vh;
@@ -110,6 +117,7 @@ body {
     font-weight: 500;
     margin: 0 auto;
 }
+
 #about-us-page .service-bottom {
     display: flex;
     align-items: center;
@@ -117,6 +125,7 @@ body {
     flex-wrap: wrap;
     margin-top: 50px;
 }
+
 #about-us-page .service-item {
     flex-basis: 80%;
     display: flex;
@@ -132,6 +141,7 @@ body {
     z-index: 1;
     overflow: hidden;
 }
+
 #about-us-page .service-item::after {
     content: '';
     position: absolute;
@@ -143,27 +153,26 @@ body {
     opacity: .9;
     z-index: -1;
 }
+
 #about-us-page .service-bottom .icon {
     height: 80px;
     width: 80px;
     margin-bottom: 20px;
 }
+
 #about-us-page .service-item h2 {
     font-size: 2rem;
     color: white;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
+
 #about-us-page .service-item p {
     color: white;
     text-align: left;
 }
 
-.section-title {
-    font-family: Georgia, sans-serif;
-    font-size: 60px;
-    margin-bottom: 30px;
-}
+
 
 
 /*BEGIN - ID'S*/
