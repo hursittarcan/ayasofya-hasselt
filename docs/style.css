@@ -292,25 +292,6 @@ body {
     height: 100vh;
 }
 
-.floatleft {
-    padding-top: 40vh;
-    padding-left: 2vh;
-    align-content: center;
-    text-align: center;
-}
-
-.floatleft, .floatright {
-    float:left;
-    width: 50%;
-    background-color: #ff0000;
-    height: inherit;
-}
-
-.floatright {
-    background-color: #00ff00;
-    width: 50%;
-}
-
 #adress-div {
     border-radius: 30px;
     text-align: center;
