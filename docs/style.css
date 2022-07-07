@@ -367,3 +367,15 @@ body {
     color: wheat;
 }
 /*END - ID'S*/
+
+@media only screen and (max-width: 1200px) {
+    body {
+        background-color: red;
+        color: green;
+    }
+
+    .section-title {
+        color: red;
+        background: blue;
+    }
+}
