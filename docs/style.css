@@ -210,41 +210,7 @@ body {
 }
 /*END - ABOUT US PAGE*/
 
-
-/*BEGIN - ID'S*/
-#main-logo-diyanet {
-    width: 150px;
-    height: 150px;
-}
-
-#main-logo-diyanet:hover {
-    content: url("assets/diyanet-logo-black.png");
-}
-/*END - ID'S*/
-
-
-
-
-
-
-
-
-
-
-
-#adress-div {
-    border-radius: 30px;
-    text-align: center;
-    height: auto;
-    margin: 0 auto;
-    padding: 10px;
-    position: relative;
-}
-
-#contact-page {
-    height: 100vh;
-}
-
+/*BEGIN - CONTACT PAGE*/
 #about-us-page2 .about-us-page {
     flex-direction: column;
     text-align: center;
@@ -332,22 +298,9 @@ body {
     color: wheat;
     cursor: pointer;
 }
+/*END - CONTACT PAGE*/
 
-#maps {
-    border-radius: 15px;
-    border: solid #2f2929 7px;
-}
-
-#facebook-button:hover {
-    background: #2f2929;
-    color: wheat;
-}
-
-#mail-button:hover {
-    background: #2f2929;
-    color: wheat;
-}
-
+/*BEGIN - FOOTER PAGE*/
 .footer{
     text-align: center;
     background: #000;
@@ -374,3 +327,43 @@ body {
     width: 90vw;
     margin: 0 auto;
 }
+/*END - FOOTER PAGE*/
+
+/*BEGIN - ID'S*/
+#main-logo-diyanet {
+    width: 150px;
+    height: 150px;
+}
+
+#main-logo-diyanet:hover {
+    content: url("assets/diyanet-logo-black.png");
+}
+
+#adress-div {
+    border-radius: 30px;
+    text-align: center;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+#contact-page {
+    height: 100vh;
+}
+
+#maps {
+    border-radius: 15px;
+    border: solid #2f2929 7px;
+}
+
+#facebook-button:hover {
+    background: #2f2929;
+    color: wheat;
+}
+
+#mail-button:hover {
+    background: #2f2929;
+    color: wheat;
+}
+/*END - ID'S*/
