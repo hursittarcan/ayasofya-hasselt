@@ -370,12 +370,19 @@ body {
 
 @media only screen and (max-width: 1200px) {
     body {
-        background-color: red;
         color: green;
     }
 
-    .section-title {
-        color: red;
-        background: blue;
+    .about-left {
+        display: none;
+    }
+
+    .about-us-total {
+        align-content: center;
+    }
+
+    .about-right {
+        width: 100%;
+        padding-right: 0;
     }
 }
