@@ -64,7 +64,7 @@ body {
 }
 
 .landing-page-button {
-    border: solid #2f2929 2px;
+    border: solid #2f2929 3px;
     background: transparent;
     text-transform: uppercase;
     font-weight: 600;
@@ -401,7 +401,7 @@ body {
         width: 100%;
         padding-left: 40px;
         padding-right: 40px;
-        padding-top: 100px;
+        padding-top: 60px;
         height: 100%;
         text-align: center;
         align-content: center;
@@ -434,7 +434,7 @@ body {
     }
 
     #maps {
-        height: 400px;
+        height: 340px;
     }
 }
 
