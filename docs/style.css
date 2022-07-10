@@ -385,4 +385,28 @@ body {
         width: 100%;
         padding-right: 0;
     }
+
+    #about-left-contact {
+        display: inline-block;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 100px;
+        height: 100%;
+        text-align: center;
+        align-content: center;
+    }
+
+    #about-us-page2 {
+        display: none;
+    }
+
+    #contact-page {
+        height: auto;
+    }
+
+    #contact-div {
+        display: inline-block;
+        width: 100%;
+    }
 }
