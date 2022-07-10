@@ -397,7 +397,7 @@ body {
         width: 100%;
         padding-left: 40px;
         padding-right: 40px;
-        padding-top: 200px;
+        padding-top: 100px;
         height: 100%;
         text-align: center;
         align-content: center;
@@ -422,6 +422,10 @@ body {
     }
 
     #about-us-page2 .about-us-page {
-        margin-top: -550px;
+        margin-top: -650px;
+    }
+
+    #maps {
+        height: 300px;
     }
 }
