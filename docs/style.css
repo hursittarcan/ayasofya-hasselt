@@ -404,7 +404,12 @@ body {
     }
 
     #about-us-page2 {
-        display: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-us-page {
+        height: auto;
     }
 
     #contact-page {
@@ -414,5 +419,9 @@ body {
     #contact-div {
         display: inline-block;
         width: 100%;
+    }
+
+    #about-us-page2 .about-us-page {
+        margin-top: -550px;
     }
 }
