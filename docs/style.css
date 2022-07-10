@@ -368,6 +368,12 @@ body {
 }
 /*END - ID'S*/
 
+@media only screen and (min-width: 1200px) {
+    #media-line {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     body {
         color: green;
@@ -389,9 +395,7 @@ body {
     #about-left-contact {
         display: inline-block;
         width: 100%;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 100px;
+        padding: 200px 40px -100px;
         height: 100%;
         text-align: center;
         align-content: center;
