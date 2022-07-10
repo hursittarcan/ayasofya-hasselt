@@ -395,7 +395,9 @@ body {
     #about-left-contact {
         display: inline-block;
         width: 100%;
-        padding: 200px 40px -100px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 200px;
         height: 100%;
         text-align: center;
         align-content: center;
