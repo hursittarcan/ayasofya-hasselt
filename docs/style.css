@@ -374,7 +374,67 @@ body {
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 10px) {
+    .about-left {
+        display: none;
+    }
+
+    .about-us-total {
+        align-content: center;
+    }
+
+    .about-right {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .about-us-top-part {
+        width: 100%;
+    }
+
+    #about-left-contact {
+        display: block;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 60px;
+        height: 100%;
+        text-align: center;
+        align-content: center;
+    }
+
+    #about-us-page2 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-us-page {
+        height: auto;
+    }
+
+    #contact-page {
+        height: auto;
+    }
+
+    #contact-div {
+        display: block;
+        width: 100%;
+    }
+
+    #about-us-page2 .about-us-page {
+        padding-top: 0;
+    }
+
+    .container {
+        min-height: 0;
+    }
+
+    #maps {
+        height: 340px;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width:600px) {
     .about-left {
         display: none;
     }
@@ -437,12 +497,5 @@ body {
 @media only screen and (max-width: 870px) {
     #maps {
         height: 300px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-
-    .content h1 {
-        font-size: 120px;
     }
 }
