@@ -393,7 +393,7 @@ body {
     }
 
     #about-left-contact {
-        display: inline-block;
+        display: block;
         width: 100%;
         padding-left: 40px;
         padding-right: 40px;
@@ -417,14 +417,32 @@ body {
     }
 
     #contact-div {
-        display: inline-block;
+        display: block;
         width: 100%;
     }
 
     #about-us-page2 .about-us-page {
-        margin-top: -650px;
+        margin-top: -750px;
     }
 
+    #maps {
+        height: 400px;
+    }
+
+    #tel-button {
+        display: none;
+    }
+
+    #facebook-button {
+        display: none;
+    }
+
+    #mail-button {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 870px) {
     #maps {
         height: 300px;
     }
