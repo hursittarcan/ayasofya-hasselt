@@ -375,10 +375,6 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
-    body {
-        color: green;
-    }
-
     .about-left {
         display: none;
     }
@@ -441,5 +437,12 @@ body {
 @media only screen and (max-width: 870px) {
     #maps {
         height: 300px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .content h1 {
+        font-size: 120px;
     }
 }
