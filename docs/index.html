@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Fri Nov 29 2024 19:21:40 GMT+0000 (Coordinated Universal Time) -->
+<!DOCTYPE html>
 <html data-wf-domain="worshipxtemplates.webflow.io" data-wf-page="65a00e522a7d5bfc0f892068"
       data-wf-site="63cdc7b0653ff46554b27492" data-wf-status="1">
 <head>
@@ -34,6 +34,109 @@
         .w-webflow-badge {
             display: none !important;
         }
+
+        /* Language Selector Modal Styles */
+        .language-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.3s ease;
+        }
+
+        .language-modal.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .language-modal-content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 90%;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        .language-modal.hidden .language-modal-content {
+            transform: scale(0.9);
+        }
+
+        .language-modal h2 {
+            font-family: "DM Sans", sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+
+        .language-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .language-option {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #333;
+            font-family: "DM Sans", sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .language-option:hover {
+            border-color: #666;
+            background-color: #f5f5f5;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .flag-icon {
+            width: 32px;
+            height: 24px;
+            margin-right: 15px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        .language-name {
+            flex: 1;
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+            .language-modal-content {
+                padding: 30px 20px;
+            }
+
+            .language-modal h2 {
+                font-size: 24px;
+            }
+
+            .language-option {
+                font-size: 16px;
+                padding: 12px 15px;
+            }
+        }
     </style>
     <script type="text/javascript">window.__WEBFLOW_CURRENCY_SETTINGS = {
         "currencyCode": "USD",
@@ -46,6 +149,27 @@
     };</script>
 </head>
 <body>
+<!-- Language Selection Modal -->
+<div id="languageModal" class="language-modal">
+    <div class="language-modal-content">
+        <h2>Selecteer uw taal</h2>
+        <div class="language-options">
+            <a href="#" class="language-option" onclick="selectLanguage('nl')">
+                <img src="https://flagcdn.com/w40/nl.png" alt="Dutch Flag" class="flag-icon">
+                <span class="language-name">Nederlands</span>
+            </a>
+            <a href="#" class="language-option" onclick="selectLanguage('fr')">
+                <img src="https://flagcdn.com/w40/fr.png" alt="French Flag" class="flag-icon">
+                <span class="language-name">Français</span>
+            </a>
+            <a href="#" class="language-option" onclick="selectLanguage('tr')">
+                <img src="https://flagcdn.com/w40/tr.png" alt="Turkish Flag" class="flag-icon">
+                <span class="language-name">Türkçe</span>
+            </a>
+        </div>
+    </div>
+</div>
+
 <div class="page-wrapper">
     <div class="header-position-absolute-wrapper">
         <div data-w-id="a1512999-01ca-d5b6-e538-6973f8350ac9" data-animation="default" data-collapse="medium"
@@ -90,7 +214,7 @@
                 <div data-w-id="f2a32c76-cf5f-a728-5ecf-bee4363717a3"
                      style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
                      class="buttons-row center"><a href="https://g.co/kgs/3CyFZ2Z" class="btn-primary white button-row w-button">Kom ons bezoeken</a>
-               </div>
+                </div>
             </div>
         </div>
         <img class="position-absolute bg-image-full"
@@ -119,13 +243,29 @@
                 }
 
                 .more-templates-badge-wrapper.active:hover {
-
                     transform: translateY(-3px) scale(1.02) translateX(-3px) rotate(1deg);
-
                 }
             </style>
 
             <script>
+                // Language selector functionality
+                function selectLanguage(lang) {
+                    // Hide the modal
+                    const modal = document.getElementById('languageModal');
+                    modal.classList.add('hidden');
+
+                    // You can add logic here to redirect to different language versions
+                    // or update the content based on the selected language
+                    console.log('Selected language:', lang);
+
+                    if (lang === 'fr') {
+                        window.location.href = '/fr/';
+                    } else if (lang === 'tr') {
+                        window.location.href = '/tr/';
+                    }
+                }
+
+                // Original template code
                 document.addEventListener('DOMContentLoaded', function () {
                     const cards = document.querySelectorAll('.more-templates-badge-wrapper');
                     let currentIndex = 0;
@@ -155,7 +295,7 @@
         </div>
     </div>
 </div>
-</div>
+
 <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=63cdc7b0653ff46554b27492"
         type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous"></script>
