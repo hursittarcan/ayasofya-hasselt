@@ -137,6 +137,28 @@
                 padding: 12px 15px;
             }
         }
+
+        @keyframes fadeInModal {
+            0% {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .language-modal-content {
+            animation: fadeInModal 0.5s ease-out forwards;
+            opacity: 0;
+            transform: scale(0.95);
+        }
+
+        .language-modal.show .language-modal-content {
+            opacity: 1;
+        }
+
     </style>
     <script type="text/javascript">window.__WEBFLOW_CURRENCY_SETTINGS = {
         "currencyCode": "USD",
@@ -155,15 +177,15 @@
         <h2>Selecteer uw taal</h2>
         <div class="language-options">
             <a href="#" class="language-option" onclick="selectLanguage('nl')">
-                <img src="https://flagcdn.com/w40/nl.png" alt="Dutch Flag" class="flag-icon">
+                <img src="https://flagcdn.com/w160/nl.png" alt="Dutch Flag" class="flag-icon">
                 <span class="language-name">Nederlands</span>
             </a>
             <a href="#" class="language-option" onclick="selectLanguage('fr')">
-                <img src="https://flagcdn.com/w40/fr.png" alt="French Flag" class="flag-icon">
+                <img src="https://flagcdn.com/w160/fr.png" alt="French Flag" class="flag-icon">
                 <span class="language-name">Français</span>
             </a>
             <a href="#" class="language-option" onclick="selectLanguage('tr')">
-                <img src="https://flagcdn.com/w40/tr.png" alt="Turkish Flag" class="flag-icon">
+                <img src="https://flagcdn.com/w160/tr.png" alt="Turkish Flag" class="flag-icon">
                 <span class="language-name">Türkçe</span>
             </a>
         </div>
@@ -248,49 +270,37 @@
             </style>
 
             <script>
-                // Language selector functionality
-                function selectLanguage(lang) {
-                    // Hide the modal
-                    const modal = document.getElementById('languageModal');
-                    modal.classList.add('hidden');
-
-                    // You can add logic here to redirect to different language versions
-                    // or update the content based on the selected language
-                    console.log('Selected language:', lang);
-
-                    if (lang === 'fr') {
-                        window.location.href = '/fr/';
-                    } else if (lang === 'tr') {
-                        window.location.href = '/tr/';
-                    }
-                }
-
-                // Original template code
+                // Wait for DOM to load before animating modal
                 document.addEventListener('DOMContentLoaded', function () {
+                    const modal = document.getElementById('languageModal');
+                    if (modal) {
+                        modal.classList.add('show'); // Triggers animation
+                    }
+
+                    // Existing badge carousel code
                     const cards = document.querySelectorAll('.more-templates-badge-wrapper');
                     let currentIndex = 0;
-                    const ANIMATION_INTERVAL = 8000; // 8 seconds
+                    const ANIMATION_INTERVAL = 8000;
 
                     function updateCards() {
                         cards.forEach((card, index) => {
                             card.classList.remove('active', 'next');
-
-                            if (index === currentIndex) {
-                                card.classList.add('active');
-                            } else if (index === (currentIndex + 1) % cards.length) {
-                                card.classList.add('next');
-                            }
+                            if (index === currentIndex) card.classList.add('active');
+                            else if (index === (currentIndex + 1) % cards.length) card.classList.add('next');
                         });
-
                         currentIndex = (currentIndex + 1) % cards.length;
                     }
 
-                    // Initial state
                     updateCards();
-
-                    // Start the loop
                     setInterval(updateCards, ANIMATION_INTERVAL);
                 });
+
+                function selectLanguage(lang) {
+                    const modal = document.getElementById('languageModal');
+                    modal.classList.add('hidden');
+                    console.log('Selected language:', lang);
+                    // Redirect logic can go here
+                }
             </script>
         </div>
     </div>
